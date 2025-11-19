@@ -46,23 +46,8 @@ main()
             break;
     }
 
-    if(level.script != "ending")
-    {
-        character\character_us_army_smg_rnd_pilot::main();
-    }
-    else
-    {
-        switch( codescripts\character::get_random_character(2) )
-        {
-            case 0:
-                character\character_zack_pilot::main();
-                break;
-            case 1:
-                character\character_velinda_pilot::main();
-                break;
-        }
-    }
-
+    character\character_us_army_smg_rnd::main();
+    
 }
 
 spawner()
@@ -72,9 +57,7 @@ spawner()
 
 precache()
 {
-    character\character_us_army_smg_rnd_pilot::precache();
-    character\character_zack_pilot::precache();
-    character\character_velinda_pilot::precache();
+    character\character_us_army_smg_rnd::precache();
     precacheitem( "kriss" );
     precacheitem( "kriss_reflex" );
     precacheitem( "ump45_acog" );

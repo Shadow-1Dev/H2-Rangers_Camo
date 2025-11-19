@@ -31,7 +31,7 @@ main()
             break;
     }
 
-    character\character_us_army_smg_rnd_pilot::main();
+    character\character_us_army_smg_rnd::main();
 }
 
 spawner()
@@ -41,7 +41,7 @@ spawner()
 
 precache()
 {
-    character\character_us_army_smg_rnd_pilot::precache();
+    character\character_us_army_smg_rnd::precache();
     precacheitem( "mp5" );
     precacheitem( "mp5_reflex" );
     precacheitem( "glock" );

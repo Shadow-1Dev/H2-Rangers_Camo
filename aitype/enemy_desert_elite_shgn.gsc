@@ -41,21 +41,17 @@ main()
             break;
     }
 
-    if( level.script == "af_caves" || level.script == "af_chase" || level.script == "ending" )
+    switch( codescripts\character::get_random_character(3) )
     {
-        switch( codescripts\character::get_random_character(2) )
-        {
-            case 0:
-                character\character_us_army_assault_unarmed::main();
-                break;
-            case 1:
-                character\character_us_army_paramedic::main();
-                break;
-        }
-    }
-    else
-    {
-        character\character_us_army_shotgun_rnd::main();
+        case 0:
+            character\character_us_army_shotgun_c::main();
+            break;
+        case 1:
+            character\character_us_army_shotgun_a::main();
+            break;
+        case 2:
+            character\character_us_army_shotgun_b::main();
+            break;
     }
 }
 
@@ -66,9 +62,9 @@ spawner()
 
 precache()
 {
-    character\character_us_army_shotgun_rnd::precache();
-    character\character_us_army_assault_unarmed::precache();
-    character\character_us_army_paramedic::precache();
+    character\character_us_army_shotgun_c::precache();
+    character\character_us_army_shotgun_a::precache();
+    character\character_us_army_shotgun_b::precache();
     precacheitem( "spas12" );
     precacheitem( "m1014" );
     precacheitem( "aa12_reflex" );

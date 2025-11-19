@@ -38,53 +38,18 @@ main()
             break;
     }
 
-    if ( level.script == "estate" )
-	{
-		switch( codescripts\character::get_random_character(5) )
-        {
-            case 0:
-                character\character_tf_141_forest_ar::main();
-                break;
-            case 1:
-                character\character_tf_141_forest_assault_b::main();
-                break;
-            case 2:
-                character\character_tf_141_forest_ozone::main();
-                break;
-            case 3:
-                character\character_tf_141_forest_scarecrow::main();
-                break;
-            case 4:
-                character\character_tf_141_forest_shtgn::main();
-                break;
-        }
-	}
-    else if( level.script == "af_caves" || level.script == "af_chase" || level.script == "ending" )
+    switch( codescripts\character::get_random_character(3) )
     {
-        switch( codescripts\character::get_random_character(5) )
-        {
-            case 0:
-                character\character_us_army_assault_a::main();
-                break;
-            case 1:
-                character\character_us_army_assault_b::main();
-                break;
-            case 2:
-                character\character_us_army_assault_c::main();
-                break;
-            case 3:
-                character\character_us_army_smg::main();
-                break;
-            case 4:
-                character\character_us_army_smg_b::main();
-                break;
-        }
+        case 0:
+            character\character_us_army_smg_c::main();
+            break;
+        case 1:
+            character\character_us_army_smg::main();
+            break;
+        case 2:
+            character\character_us_army_smg_b::main();
+            break;
     }
-	else
-	{
-		character\character_us_army_smg_rnd::main();
-	}
-
 }
 
 spawner()
@@ -94,15 +59,7 @@ spawner()
 
 precache()
 {
-    character\character_us_army_smg_rnd::precache();
-    character\character_tf_141_forest_ar::precache();
-    character\character_tf_141_forest_assault_b::precache();
-    character\character_tf_141_forest_ozone::precache();
-    character\character_tf_141_forest_scarecrow::precache();
-    character\character_tf_141_forest_shtgn::precache();
-    character\character_us_army_assault_a::precache();
-    character\character_us_army_assault_b::precache();
-    character\character_us_army_assault_c::precache();
+    character\character_us_army_smg_c::precache();
     character\character_us_army_smg::precache();
     character\character_us_army_smg_b::precache();
     precacheitem( "wa2000_thermal" );

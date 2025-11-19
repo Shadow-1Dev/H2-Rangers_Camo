@@ -32,7 +32,7 @@ main()
             character\character_us_army_lmg_rnd::main();
             break;
         case 2:
-            character\character_us_army_smg_rnd_pilot::main();
+            character\character_us_army_smg_rnd::main();
             break;
         case 3:
             character\character_us_army_smg_rnd::main();
@@ -54,7 +54,6 @@ precache()
     character\character_us_army_lmg_rnd::precache();
     character\character_us_army_shotgun_rnd::precache();
     character\character_us_army_smg_rnd::precache();
-    character\character_us_army_smg_rnd_pilot::precache();
     precacheitem( "rpg" );
     precacheitem( "m4_grunt" );
     precacheitem( "beretta" );

@@ -29,15 +29,8 @@ main()
     }
 
     self.weapon = "rpd";
-    if( level.script == "af_caves" || level.script == "af_chase" || level.script == "ending" )
-    {
-        character\character_us_army_assault_lmg::main();
-    }
-    else
-    {
-        character\character_us_army_lmg_rnd::main();
-    }
-    
+
+    character\character_us_army_lmg_rnd::main();
 }
 
 spawner()
@@ -48,7 +41,6 @@ spawner()
 precache()
 {
     character\character_us_army_lmg_rnd::precache();
-    character\character_us_army_assault_lmg::precache();
     precacheitem( "rpd" );
     precacheitem( "glock" );
     precacheitem( "fraggrenade" );

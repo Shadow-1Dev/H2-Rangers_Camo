@@ -53,25 +53,9 @@ main()
             break;
     }
 
-    if( level.script == "af_caves" || level.script == "af_chase" || level.script == "ending" )
-    {
-        switch( codescripts\character::get_random_character(3) )
-        {
-            case 0:
-                character\character_us_army_smg_c::main();
-                break;
-            case 1:
-                character\character_us_army_smg::main();
-                break;
-            case 2:
-                character\character_us_army_smg_b::main();
-                break;
-        }
-    }
-	else
-	{
-		character\character_us_army_smg_rnd::main();
-	}
+
+	character\character_us_army_smg_rnd::main();
+
 }
 
 spawner()
@@ -82,9 +66,6 @@ spawner()
 precache()
 {
     character\character_us_army_smg_rnd::precache();
-    character\character_us_army_smg_c::precache();
-    character\character_us_army_smg::precache();
-    character\character_us_army_smg_b::precache();
     precacheitem( "kriss" );
     precacheitem( "kriss_reflex" );
     precacheitem( "ump45_acog" );

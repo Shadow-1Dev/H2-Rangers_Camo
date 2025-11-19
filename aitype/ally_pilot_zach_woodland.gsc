@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "mp5";
-    character\character_us_army_smg_rnd_pilot::main();
+    character\character_us_army_smg_rnd::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_us_army_smg_rnd_pilot::precache();
+    character\character_us_army_smg_rnd::precache();
     precacheitem( "mp5" );
     precacheitem( "beretta" );
     precacheitem( "beretta" );
