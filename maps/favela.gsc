@@ -1530,8 +1530,8 @@ _id_C93F()
     // if ( isdefined( level._id_C904.headmodel ) )
     //     level._id_C904 detach( level._id_C904.headmodel );
 
-    level._id_C904 character\character_shadow_co_assault_dcemp::main(); //here
-    //level._id_C904 character\character_shadow_co_assault::main(); //here
+    level._id_C904 character\character_us_army_assault_rnd_dcemp::main(); //here
+    //level._id_C904 character\character_us_army_assault_rnd::main(); //here
     level._id_C904.ignoresuppression = 1;
     level._id_C904._id_909A = 1000;
     level._id_B0E8.ignoresuppression = 1;

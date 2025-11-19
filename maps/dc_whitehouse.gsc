@@ -228,7 +228,7 @@ _id_BA31()
     self endon( "death" );
     thread wave_guy_deleter( self );
     codescripts\character::setheadmodel( "head_shadow_co_c" ); //here
-    character\character_shadow_co_assault_dcemp::main();
+    character\character_us_army_assault_rnd_dcemp::main();
     maps\_utility::forceuseweapon( "m4_grunt", "primary" );
     var_0 = getent( self.target, "targetname" );
     var_0 thread maps\_anim::anim_generic_loop( self, "wave_idle", "stop_loop" );
@@ -1021,7 +1021,7 @@ _id_D52B()
     thread maps\_utility::magic_bullet_shield();
     thread returnguntomarshall();
     codescripts\character::setheadmodel( "head_shadow_co_c" ); //here
-    character\character_shadow_co_assault_dcemp::main();
+    character\character_us_army_assault_rnd_dcemp::main();
     self allowedstances( "crouch" );
     var_0 = getent( "whitehouse_briefing_ent", "targetname" );
     self attach( "weapon_binocular", "tag_inhand" );

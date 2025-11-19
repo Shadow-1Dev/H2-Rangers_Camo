@@ -31,7 +31,7 @@ main()
             break;
     }
 
-    character\character_shadow_co_shotgun::main();
+    character\character_us_army_shotgun_rnd::main();
 }
 
 spawner()
@@ -41,7 +41,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_shotgun::precache();
+    character\character_us_army_shotgun_rnd::precache();
     precacheitem( "spas12" );
     precacheitem( "spas12_reflex" );
     precacheitem( "glock" );

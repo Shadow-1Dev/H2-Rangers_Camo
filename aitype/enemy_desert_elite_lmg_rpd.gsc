@@ -35,7 +35,7 @@ main()
     }
     else
     {
-        character\character_shadow_co_lmg::main();
+        character\character_us_army_lmg_rnd::main();
     }
     
 }
@@ -47,7 +47,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_lmg::precache();
+    character\character_us_army_lmg_rnd::precache();
     character\character_us_army_assault_lmg::precache();
     precacheitem( "rpd" );
     precacheitem( "glock" );

@@ -55,7 +55,7 @@ main()
     }
     else
     {
-        character\character_shadow_co_shotgun::main();
+        character\character_us_army_shotgun_rnd::main();
     }
 }
 
@@ -66,7 +66,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_shotgun::precache();
+    character\character_us_army_shotgun_rnd::precache();
     character\character_us_army_assault_unarmed::precache();
     character\character_us_army_paramedic::precache();
     precacheitem( "spas12" );

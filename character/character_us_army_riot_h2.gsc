@@ -3,7 +3,7 @@
 
 main()
 {
-    self setmodel( "Body_US_army_Shotgun" );
+    self setmodel( "body_riot_udt" );
     self attach( "h2_head_riot_udt", "", 1 );
     self.headmodel = "h2_head_riot_udt";
     self.voice = "american";
@@ -12,6 +12,6 @@ main()
 
 precache()
 {
-    precachemodel( "Body_US_army_Shotgun" );
+    precachemodel( "body_riot_udt" );
     precachemodel( "h2_head_riot_udt" );
 }

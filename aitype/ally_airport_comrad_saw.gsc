@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "m240";
-    character\character_shadow_co_lmg::main();
+    character\character_us_army_lmg_rnd::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_lmg::precache();
+    character\character_us_army_lmg_rnd::precache();
     precacheitem( "m240" );
     precacheitem( "beretta" );
     precacheitem( "beretta" );

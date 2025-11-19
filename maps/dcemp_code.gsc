@@ -1798,7 +1798,7 @@ _id_B72A()
     // var_1 codescripts\character::setheadmodel( "head_us_army_d_dead_elevator" );
     //var_1 setmodel( "body_shadow_co_assault" ); //here
     //var_1 codescripts\character::setheadmodel( "head_shadow_co_c" ); //here
-    //var_1 character\character_shadow_co_assault_dcemp::main(); //here
+    //var_1 character\character_us_army_assault_rnd_dcemp::main(); //here
     //level._id_BEE1 codescripts\character::setheadmodel( "head_shadow_co_c" ); //here
     level._id_BEE1 = var_1;
     var_1.animname = "dead_guy";

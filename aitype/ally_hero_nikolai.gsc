@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "masada_acog";
-    character\character_shadow_co_smg_pilot::main();
+    character\character_us_army_smg_rnd_pilot::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_smg_pilot::precache();
+    character\character_us_army_smg_rnd_pilot::precache();
     precacheitem( "masada_acog" );
     precacheitem( "beretta" );
     precacheitem( "fraggrenade" );

@@ -70,7 +70,7 @@ main()
     }
 	else
 	{
-		character\character_shadow_co_smg::main();
+		character\character_us_army_smg_rnd::main();
 	}
 }
 
@@ -81,7 +81,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_smg::precache();
+    character\character_us_army_smg_rnd::precache();
     character\character_us_army_smg_c::precache();
     character\character_us_army_smg::precache();
     character\character_us_army_smg_b::precache();

@@ -7800,12 +7800,12 @@ _id_D0A1()
         case "h2_dcburning_medicalbay_soldier_B":
             maps\_utility::gun_remove(); //here
             //codescripts\character::setheadmodel( "head_shadow_co_c_takedown" );
-            //character\character_shadow_co_assault_dcemp::main();
+            //character\character_us_army_assault_rnd_dcemp::main();
             break;
         case "h2_dc_burning_carrying_Injured_wounded":
             maps\_utility::gun_remove(); //here
             //codescripts\character::setheadmodel( "head_shadow_co_c_takedown" );
-            //character\character_shadow_co_assault_dcemp::main();
+            //character\character_us_army_assault_rnd_dcemp::main();
             break;
         case "h2_dcburning_medicalbay_soldier_J_idle":
             maps\_utility::gun_remove();

@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "ak47";
-    character\character_shadow_co_smg_pilot::main();
+    character\character_us_army_smg_rnd_pilot::main();
 
 }
 
@@ -33,7 +33,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_smg_pilot::precache();
+    character\character_us_army_smg_rnd_pilot::precache();
     precacheitem( "ak47" );
     precacheitem( "fraggrenade" );
 }

@@ -8,5 +8,6 @@ main()
     var_0[2] = "head_us_army_c";
     var_0[3] = "head_us_army_b";
     var_0[4] = "head_us_army_a";
+    var_0[5] = "head_us_army_g";
     return var_0;
 }

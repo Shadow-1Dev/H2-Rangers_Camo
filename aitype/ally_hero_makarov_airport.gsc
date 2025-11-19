@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "m4_grenadier_airport";
-    character\character_shadow_co_smg::main();
+    character\character_us_army_smg_rnd::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_smg::precache();
+    character\character_us_army_smg_rnd::precache();
     precacheitem( "m4_grenadier_airport" );
     precacheitem( "m203_m4_airport" );
     precacheitem( "m79" );

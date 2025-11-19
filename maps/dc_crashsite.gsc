@@ -197,7 +197,7 @@ _id_B0C4()
     // level._id_BBBD codescripts\character::setheadmodel( "head_us_army_b" ); //here
     //level._id_BBBD codescripts\character::setheadmodel( "head_shadow_co_c_takedown" ); //here
     codescripts\character::setheadmodel( "head_shadow_co_c" ); //here
-    character\character_shadow_co_assault_dcemp::main(); //here
+    character\character_us_army_assault_rnd_dcemp::main(); //here
     level._id_AC03 hide();
     level._id_C280 hide();
     level._id_BBBD hide();

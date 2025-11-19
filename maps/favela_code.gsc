@@ -616,7 +616,7 @@ _id_B5C0()
     var_0 thread maps\_hud_util::_id_CC64( ::_id_BA61, "Shadow", "allies" ); //here
     // var_0 codescripts\character::setheadmodel( "h2_head_seal_soccom_e" );
     //here
-    var_0 character\character_shadow_co_assault::main();
+    var_0 character\character_us_army_assault_rnd::main();
     var_0 linkto( self, "tag_driver" );
     thread maps\_anim::anim_single_solo( var_0, "drive_and_die", "tag_driver" );
 }

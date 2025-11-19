@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "ak47";
-    character\character_shadow_co_assault::main();
+    character\character_us_army_assault_rnd::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_assault::precache();
+    character\character_us_army_assault_rnd::precache();
     precacheitem( "ak47" );
     precacheitem( "beretta" );
     precacheitem( "fraggrenade" );

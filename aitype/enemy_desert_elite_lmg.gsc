@@ -70,7 +70,7 @@ main()
 
 	else
 	{
-		character\character_shadow_co_lmg::main();
+		character\character_us_army_lmg_rnd::main();
 	}
 
 }
@@ -82,7 +82,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_lmg::precache();
+    character\character_us_army_lmg_rnd::precache();
     character\character_tf_141_forest_ar::precache();
     character\character_tf_141_forest_assault_b::precache();
     character\character_tf_141_forest_ozone::precache();

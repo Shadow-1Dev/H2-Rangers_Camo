@@ -48,7 +48,7 @@ main()
 
     if(level.script != "ending")
     {
-        character\character_shadow_co_smg_pilot::main();
+        character\character_us_army_smg_rnd_pilot::main();
     }
     else
     {
@@ -72,7 +72,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_smg_pilot::precache();
+    character\character_us_army_smg_rnd_pilot::precache();
     character\character_zack_pilot::precache();
     character\character_velinda_pilot::precache();
     precacheitem( "kriss" );

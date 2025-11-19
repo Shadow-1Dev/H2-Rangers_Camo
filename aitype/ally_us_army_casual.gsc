@@ -23,7 +23,7 @@ main()
 
     self.weapon = "m4_grunt";
 
-    character\character_shadow_co_smg_pilot::main();
+    character\character_us_army_smg_rnd_pilot::main();
 }
 
 spawner()
@@ -33,7 +33,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_smg_pilot::precache();
+    character\character_us_army_smg_rnd_pilot::precache();
     precacheitem( "m4_grunt" );
     precacheitem( "beretta" );
 }
