@@ -470,7 +470,7 @@ _id_AC9B()
     thread maps\favela_code::_id_BBCE( "animated_chains" );
     level._id_B0E8 = maps\_utility::spawn_targetname( "royce_spawner", 1 );
     level._id_B0E8 thread maps\_utility::magic_bullet_shield();
-    level._id_B0E8.name = "Royce - Shadow Company";
+    level._id_B0E8.name = "Royce - US Army";
     level._id_B0E8.animname = "royce";
     // level._id_B0E8 maps\favela_code::setheadmodel( "head_seal_soccom_b" );
     level._id_B0E8 maps\_utility::forceuseweapon( "m4_grenadier", "primary" );
@@ -969,8 +969,8 @@ _id_CC36()
 _id_B1E6( var_0 )
 {
     level._id_D13B = maps\_utility::spawn_targetname( "soap_spawner", 1 );
-    level._id_D13B.name = "Soap - Shadow Company"; //here
-    level._id_B8D7.name = "Ghost - Shadow Company"; //here
+    level._id_D13B.name = "Soap - US Army"; //here
+    level._id_B8D7.name = "Ghost - US Army"; //here
     level._id_D13B maps\_utility::set_ignoreall( 1 );
     level._id_D13B.usechokepoints = 0;
     level._id_D13B.fixednode = 0;
@@ -1070,7 +1070,7 @@ _id_B07D()
     level._id_D13B endon( "death" );
     level endon( "runner_shot" );
     var_0 = getent( "soapCarHitStart", "targetname" );
-    level._id_B8D7.name = "Ghost - Shadow Company";
+    level._id_B8D7.name = "Ghost - US Army";
     var_1 = getent( "carHittingSoap", "targetname" );
     var_1.animname = "car";
     var_1 maps\_anim::setanimtree();
@@ -1321,8 +1321,8 @@ _id_B971( var_0, var_1, var_2 )
     level notify( "black_screen_start" );
     wait(var_2);
     level notify( "black_screen_finish" );
-    level._id_D13B.name = "Soap - Shadow Company"; //here
-    level._id_B8D7.name = "Ghost - Shadow Company"; //here
+    level._id_D13B.name = "Soap - US Army"; //here
+    level._id_B8D7.name = "Ghost - US Army"; //here
 
     if ( var_1 > 0 )
         var_3 fadeovertime( var_1 );
@@ -1331,8 +1331,8 @@ _id_B971( var_0, var_1, var_2 )
     wait(var_1);
     var_3 destroy();
     thread maps\favela_code::animated_sheet();
-    level._id_D13B.name = "Soap - Shadow Company"; //here
-    level._id_B8D7.name = "Ghost - Shadow Company"; //here
+    level._id_D13B.name = "Soap - US Army"; //here
+    level._id_B8D7.name = "Ghost - US Army"; //here
 }
 
 _id_D1CD()
@@ -1518,10 +1518,10 @@ _id_C93F()
 {
     level._id_C904 = maps\_utility::spawn_targetname( "meat_spawner", 1 );
     level._id_C904 thread maps\_utility::magic_bullet_shield();
-    level._id_C904.name = "Meat - Shadow Company"; //here
+    level._id_C904.name = "Meat - US Army"; //here
     level._id_C904.animname = "meat";
     // level._id_C904 maps\favela_code::setheadmodel( "head_seal_soccom_c" ); //here
-    level._id_C904 maps\favela_code::setheadmodel( "head_shadow_co_c" ); //here
+    level._id_C904 maps\favela_code::setheadmodel( "head_us_army_c" ); //here
     // level._id_C904 setmodel( "body_seal_soccom_assault_d" ); //here
     level._id_C904 setmodel( "body_shadow_co_assault" ); //here
     
@@ -1530,7 +1530,7 @@ _id_C93F()
     // if ( isdefined( level._id_C904.headmodel ) )
     //     level._id_C904 detach( level._id_C904.headmodel );
 
-    level._id_C904 character\character_us_army_assault_rnd_dcemp::main(); //here
+    level._id_C904 character\character_us_army_assault_rnd::main(); //here
     //level._id_C904 character\character_us_army_assault_rnd::main(); //here
     level._id_C904.ignoresuppression = 1;
     level._id_C904._id_909A = 1000;
@@ -1541,8 +1541,8 @@ _id_C93F()
 _id_BED2()
 {
     var_0 = getentarray( "fav_animated_chain", "targetname" );
-    level._id_D13B.name = "Soap - Shadow Company"; //here
-    level._id_B8D7.name = "Ghost - Shadow Company"; //here
+    level._id_D13B.name = "Soap - US Army"; //here
+    level._id_B8D7.name = "Ghost - US Army"; //here
 
     foreach ( var_2 in var_0 )
     {
@@ -2126,15 +2126,15 @@ _id_C545()
 
 _id_CCAD()
 {
-    level._id_B8D7.name = "Ghost - Shadow Company"; // here
-    level._id_D13B.name = "Soap - Shadow Company"; //here
+    level._id_B8D7.name = "Ghost - US Army"; // here
+    level._id_D13B.name = "Soap - US Army"; //here
     maps\_utility::trigger_wait( "ending_sequence", "targetname" );
     thread _id_C96B();
     thread maps\_utility::battlechatter_off( "allies" );
     thread maps\_utility::battlechatter_off( "axis" );
     var_0 = getent( "ending_node", "targetname" );
     var_1 = maps\_utility::spawn_targetname( "ending_soap_spawner", 1 );
-    var_1.name = "Soap - Shadow Company";
+    var_1.name = "Soap - US Army";
     var_1.animname = "mactavish";
     var_1 maps\_utility::set_ignoreme( 1 );
     var_1 maps\_utility::set_ignoreall( 1 );
@@ -2153,9 +2153,9 @@ _id_CCAD()
     var_3 useanimtree( level.scr_animtree["car"] );
     var_3.animname = "car";
     level._id_B8D7 = maps\_utility::spawn_targetname( "ending_ghost_spawner", 1 );
-    level._id_B8D7.name = "Ghost - Shadow Company"; //here
+    level._id_B8D7.name = "Ghost - US Army"; //here
     level._id_B8D7.animname = "ghost"; //here
-    level._id_D13B.name = "Soap - Shadow Company"; //here
+    level._id_D13B.name = "Soap - US Army"; //here
     level._id_B8D7 maps\_utility::set_ignoreme( 1 );
     level._id_B8D7 maps\_utility::set_ignoreall( 1 );
     level._id_B8D7 thread maps\_utility::magic_bullet_shield();

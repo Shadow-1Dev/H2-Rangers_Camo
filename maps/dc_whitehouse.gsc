@@ -204,8 +204,8 @@ _id_B414()
     maps\dc_whitehouse_code::_id_D04E();
     maps\_utility::battlechatter_off( "allies" );
     level.foley thread _id_C99D();
-    level.foley.name = "Sgt. Foley - Shadow Company"; //here
-    level._id_ACC0.name = "Cpl. Dunn - Shadow Company"; //here
+    level.foley.name = "Sgt. Foley - US Army"; //here
+    level._id_ACC0.name = "Cpl. Dunn - US Army"; //here
     level._id_ACC0 thread _id_ABD3();
     common_scripts\utility::flag_wait( "tunnels_wave_guy" );
     thread maps\_weather::rainmedium( 15 );
@@ -227,8 +227,8 @@ _id_BA31()
 {
     self endon( "death" );
     thread wave_guy_deleter( self );
-    codescripts\character::setheadmodel( "head_shadow_co_c" ); //here
-    character\character_us_army_assault_rnd_dcemp::main();
+    codescripts\character::setheadmodel( "head_us_army_c" ); //here
+    character\character_us_army_assault_rnd::main();
     maps\_utility::forceuseweapon( "m4_grunt", "primary" );
     var_0 = getent( self.target, "targetname" );
     var_0 thread maps\_anim::anim_generic_loop( self, "wave_idle", "stop_loop" );
@@ -1020,8 +1020,8 @@ _id_D52B()
     level._id_C19E = self;
     thread maps\_utility::magic_bullet_shield();
     thread returnguntomarshall();
-    codescripts\character::setheadmodel( "head_shadow_co_c" ); //here
-    character\character_us_army_assault_rnd_dcemp::main();
+    codescripts\character::setheadmodel( "head_us_army_c" ); //here
+    character\character_us_army_assault_rnd::main();
     self allowedstances( "crouch" );
     var_0 = getent( "whitehouse_briefing_ent", "targetname" );
     self attach( "weapon_binocular", "tag_inhand" );

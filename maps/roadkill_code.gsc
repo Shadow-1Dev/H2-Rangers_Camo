@@ -239,7 +239,7 @@ _id_C80F()
     var_0 = common_scripts\utility::getstruct( "roadkill_shepherd_scene", "targetname" );
     var_1 = [];
     var_1["foley"] = level.foley;
-    level.foley.name = "Sgt. Foley - Shadow Company"; //here
+    level.foley.name = "Sgt. Foley - US Army"; //here
 
     if ( !getdvarint( "use_old_foley_intro" ) )
     {
@@ -250,7 +250,7 @@ _id_C80F()
         level.foley _id_D11F();
         var_0 maps\_anim::anim_single_solo_run( level.foley, "roadkill_riverbank_intro" );
         level.foley maps\_utility::anim_stopanimscripted();
-        level.foley.name = "Sgt. Foley - Shadow Company"; //here
+        level.foley.name = "Sgt. Foley - US Army"; //here
         return;
     }
 
@@ -268,7 +268,7 @@ _id_C80F()
     level.foley setgoalnode( var_2 );
     level.foley.goalradius = 16;
     level.foley _id_D11F();
-    level.foley.name = "Sgt. Foley - Shadow Company"; //here
+    level.foley.name = "Sgt. Foley - US Army"; //here
 
     for (;;)
     {
@@ -299,7 +299,7 @@ _id_B7CD()
 _id_B701()
 {
     level.foley = self;
-    level.foley.name = "Sgt. Foley - Shadow Company"; //here
+    level.foley.name = "Sgt. Foley - US Army"; //here
     self.animname = "foley";
     maps\_utility::make_hero();
 
@@ -324,7 +324,7 @@ _id_CECF()
 _id_C349()
 {
     level._id_ACC0 = self;
-    level._id_ACC0.name = "Cpl. Dunn - Shadow Company";
+    level._id_ACC0.name = "Cpl. Dunn - US Army";
     self.animname = "dunn";
     maps\_utility::make_hero();
 }
@@ -2948,9 +2948,9 @@ _id_B6D7()
     var_1 = [];
     var_1["player"] = level.player;
     var_1["foley"] = level.foley;
-    level.foley.name = "Sgt. Foley - Shadow Company"; //here
+    level.foley.name = "Sgt. Foley - US Army"; //here
     var_1["dunn"] = level._id_ACC0;
-    level._id_ACC0.name = "Cpl. Dunn - Shadow Company";
+    level._id_ACC0.name = "Cpl. Dunn - US Army";
     var_2 = 0;
 
     foreach ( var_4 in var_1 )
@@ -3733,7 +3733,7 @@ _id_B6C1()
     common_scripts\utility::flag_wait( "get_on_the_line" );
     objective_add( maps\_utility::obj( "bridge_layer" ), "current", &"ROADKILL_OBJECTIVE_BRIDGELAYER", ( 0.0, 0.0, 0.0 ) );
     objective_onentity( maps\_utility::obj( "bridge_layer" ), level.foley );
-    level.foley.name = "Sgt. Foley - Shadow Company"; //here
+    level.foley.name = "Sgt. Foley - US Army"; //here
     objective_setpointertextoverride( maps\_utility::obj( "bridge_layer" ), &"SCRIPT_WAYPOINT_TARGETS" );
     objective_position( maps\_utility::obj( "bridge_layer" ), ( 0.0, 0.0, 0.0 ) );
     common_scripts\utility::flag_wait( "bridge_layer_attacked_by_bridge_baddies" );
@@ -3816,7 +3816,7 @@ _id_C068()
     }
 
     objective_onentity( maps\_utility::obj( "school" ), level.foley );
-    level.foley.name = "Sgt. Foley - Shadow Company"; //here
+    level.foley.name = "Sgt. Foley - US Army"; //here
     common_scripts\utility::flag_wait( "roadkill_school_14" );
 }
 
@@ -4038,7 +4038,7 @@ _id_AE37()
     var_1 = maps\_utility::array_spawn( var_0 );
     var_1[0].animname = "hargrove";
     var_1[1].animname = "foley";
-    level.foley.name = "Sgt. Foley - Shadow Company"; //here
+    level.foley.name = "Sgt. Foley - US Army"; //here
     thread maps\_anim::anim_single( var_1, "roadkill_intro_orders" );
     wait 0.05;
     var_2 = undefined;
@@ -4129,14 +4129,14 @@ _id_BEDB()
 _id_AA3A()
 {
     level.foley = self;
-    level.foley.name = "Sgt. Foley - Shadow Company"; //here
+    level.foley.name = "Sgt. Foley - US Army"; //here
     maps\_utility::make_hero();
 }
 
 _id_C63F()
 {
     level._id_ACC0 = self;
-    level._id_ACC0.name = "Cpl. Dunn - Shadow Company";
+    level._id_ACC0.name = "Cpl. Dunn - US Army";
     maps\_utility::make_hero();
 }
 

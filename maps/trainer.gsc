@@ -218,7 +218,7 @@ post_load()
     common_scripts\utility::array_thread( getentarray( "trainees", "targetname" ), maps\_utility::add_spawn_function, ::h2_hide_ai_pit );
     getent( "trainee_01", "script_noteworthy" ) thread maps\_utility::add_spawn_function( ::h2_hide_ai_pit );
     level.foley = maps\_utility::spawn_targetname( "foley", 1 );
-    level.foley.name = "Sgt. Foley - Shadow Company";
+    level.foley.name = "Sgt. Foley - US Army";
     level.foley.animname = "foley";
     level.foley.animnode = spawn( "script_origin", ( -2512.5, 5138.8, -56.1 ) );
     level.foley.animnode.angles = ( 0.0, -90.0, 180.0 );
@@ -1850,7 +1850,7 @@ _id_C4F7()
     level._id_B85D = maps\_utility::spawn_targetname( "pitguy", 1 );
     level._id_B85D maps\_utility::gun_remove();
     level._id_B85D.animname = "dunn";
-    level._id_B85D.name = "Cpl. Dunn - Shadow Company"; //here
+    level._id_B85D.name = "Cpl. Dunn - US Army"; //here
     level._id_B85D.bdisabledefaultfacialanims = 1;
     level._id_B85D _id_B3AB::_id_BEBA( "head", level.player, 300, 45, 45, 30, 45, 0, 1, 10, 0 );
     level._id_D177 = spawn( "script_model", ( 0.0, 0.0, 0.0 ) );

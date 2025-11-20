@@ -795,8 +795,8 @@ _id_B717()
     soundscripts\_snd::snd_message( "start_building_shellshock_filter" );
     level.player _meth_85A0();
     objective_onentity( level._id_CD9B, level.foley, ( 0.0, 0.0, 70.0 ) );
-    level.foley.name = "Sgt. Foley - Shadow Company"; // here
-    level._id_C280.name = "Cpl. Dunn - Shadow Company"; //here
+    level.foley.name = "Sgt. Foley - US Army"; // here
+    level._id_C280.name = "Cpl. Dunn - US Army"; //here
     level._id_A8A0 delete();
     common_scripts\utility::array_call( getaiarray( "axis" ), ::delete );
     var_2 = getent( "light_entry_lobby", "script_noteworthy" );
@@ -813,8 +813,8 @@ _id_B717()
     level.player giveweapon( "Beretta" );
     level.player setweaponammoclip( "Beretta", 30 );
     level.player setweaponammostock( "Beretta", 90 );
-    level.player setweaponammostock( "masada_digital_acog", 300 );
-    level.player setweaponammostock( "masada_digital_acog", 9 );
+    level.player setweaponammostock( "m4m203_eotech", 300 );
+    level.player setweaponammostock( "m4m203_eotech", 9 );
     level.player setweaponammostock( "fraggrenade", 4 );
     level.player setweaponammostock( "flash_grenade", 4 );
     thread _id_C0C3::weapons_specialfeatures();
@@ -1798,7 +1798,7 @@ _id_B72A()
     // var_1 codescripts\character::setheadmodel( "head_us_army_d_dead_elevator" );
     //var_1 setmodel( "body_shadow_co_assault" ); //here
     //var_1 codescripts\character::setheadmodel( "head_shadow_co_c" ); //here
-    //var_1 character\character_us_army_assault_rnd_dcemp::main(); //here
+    //var_1 character\character_us_army_assault_rnd::main(); //here
     //level._id_BEE1 codescripts\character::setheadmodel( "head_shadow_co_c" ); //here
     level._id_BEE1 = var_1;
     var_1.animname = "dead_guy";

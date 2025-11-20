@@ -26,7 +26,7 @@ main()
     var_0 = undefined;
     setsaveddvar( "com_cinematicEndInWhite", 1 );
     var_4 = getent( "price", "script_noteworthy" );
-    var_4.script_friendname = "Capt. MacTavish - Shadow Company";
+    var_4.script_friendname = "Capt. MacTavish - US Army";
     level._id_AFD9 = 500;
     level._id_C6AC = 200;
     level._id_B65E = 1;

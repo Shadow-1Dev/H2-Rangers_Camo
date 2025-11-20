@@ -4768,10 +4768,10 @@ _id_B351( var_0, var_1, var_2 )
         level.squad = [];
         level._id_AC03 = maps\_utility::spawn_script_noteworthy( "price" );
         
-        level._id_AC03.name = "Soap - Shadow Company"; //here
+        level._id_AC03.name = "Soap - US Army"; //here
         level._id_AC03.animname = "soap";
-        level._id_C280.name = "Ghost - Shadow Company"; //here
-        level._id_BBBD.name = "Ghost - Shadow Company"; //here
+        level._id_C280.name = "Ghost - US Army"; //here
+        level._id_BBBD.name = "Ghost - US Army"; //here
 
         level._id_C280 = maps\_utility::spawn_script_noteworthy( "friendly02" );
         level._id_BBBD = maps\_utility::spawn_script_noteworthy( "friendly03" );

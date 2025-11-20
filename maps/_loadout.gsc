@@ -24,7 +24,7 @@ give_loadout()
     
     maps\_loadout_code::loadout( "trainer", "m4_grunt_SSDD", "deserteagle", "fraggrenade", undefined, "viewmodel_base_viewhands", "american" );
 
-    maps\_loadout_code::loadout( "roadkill", "masada_digital_grenadier_eotech", "beretta", "fraggrenade", "flash_grenade", "viewmodel_base_viewhands", "american" );
+    maps\_loadout_code::loadout( "roadkill", "ak47_desert_grenadier", "fal_acog", "fraggrenade", "flash_grenade", "viewmodel_base_viewhands", "american" );
 
     maps\_loadout_code::loadout( "cliffhanger", undefined, undefined, undefined, undefined, "viewmodel_base_viewhands", "british" );
 
@@ -36,7 +36,7 @@ give_loadout()
 
     maps\_loadout_code::loadout( "favela_escape", "ump45_acog", "glock", "fraggrenade", "flash_grenade", "viewmodel_base_viewhands", "taskforce" );
 
-    maps\_loadout_code::loadout( "arcadia", "masada_digital_acog", "beretta", "fraggrenade", "flash_grenade", "viewmodel_base_viewhands", "american" );
+    maps\_loadout_code::loadout( "arcadia", "ak47_desert_grenadier", "beretta", "fraggrenade", "flash_grenade", "viewmodel_base_viewhands", "american" );
 
     maps\_loadout_code::loadout( "oilrig", "kriss_acog_silencer", "glock", "fraggrenade", "flash_grenade", "viewmodel_base_viewhands", "seal" );
 
@@ -46,7 +46,7 @@ give_loadout()
 
     maps\_loadout_code::loadout( "contingency", "cheytac_silencer_desert", "kriss_acog_silencer", "fraggrenade", "flash_grenade", "viewmodel_base_viewhands", "american" );
 
-    maps\_loadout_code::loadout( "dcemp", "masada_digital_acog", "beretta", "fraggrenade", "flash_grenade", "viewmodel_base_viewhands", "american" );
+    maps\_loadout_code::loadout( "dcemp", "m4m203_eotech", "beretta", "fraggrenade", "flash_grenade", "viewmodel_base_viewhands", "american" );
 
     maps\_loadout_code::loadout( "dc_whitehouse", "m4m203_eotech", "beretta", "fraggrenade", "flash_grenade", "viewmodel_base_viewhands", "american" );
 
@@ -65,32 +65,8 @@ give_loadout()
     maps\_loadout_code::loadoutequipment( "estate", undefined, "claymore" );
     maps\_loadout_code::default_loadout_if_notset();
 
-    if ( level.script == "arcadia" || level.script == "dcemp")
-	{
-        precacheitem("gl_masada_digital_eotech");
-        precacheitem("masada");
-        precacheitem("masada_acog");
-        precacheitem("masada_digital");
-        precacheitem("masada_digital_acog");
-        precacheitem("masada_digital_eotech");
-        precacheitem("masada_digital_grenadier_eotech");
-        precacheitem("masada_digital_reflex");
-        precacheitem("masada_reflex");
-        precacheitem("kriss_acog_silencer");
-	}
-    else
-	{
-        precacheitem("gl_masada_digital_eotech");
-        precacheitem("masada");
-        precacheitem("masada_acog");
-        precacheitem("masada_digital");
-        precacheitem("masada_digital_acog");
-        precacheitem("masada_digital_eotech");
-        precacheitem("masada_digital_grenadier_eotech");
-        precacheitem("masada_digital_reflex");
-        precacheitem("masada_reflex");
-        precacheitem("kriss_acog_silencer");
-        precacheitem("cheytac_silencer");
-        precacheitem("cheytac_silencer_desert");
-	}
+    precacheitem("masada_silencer_mt_black_on");
+    precacheitem("masada_silencer_mt_black_off");
+    precacheitem("masada_digital_acog");
+
 }

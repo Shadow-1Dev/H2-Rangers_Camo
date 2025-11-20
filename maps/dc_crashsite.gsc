@@ -196,13 +196,13 @@ _id_B0C4()
     level._id_BBBD = maps\_utility::spawn_targetname( "friendly03Crash", 1 );
     // level._id_BBBD codescripts\character::setheadmodel( "head_us_army_b" ); //here
     //level._id_BBBD codescripts\character::setheadmodel( "head_shadow_co_c_takedown" ); //here
-    codescripts\character::setheadmodel( "head_shadow_co_c" ); //here
-    character\character_us_army_assault_rnd_dcemp::main(); //here
+    codescripts\character::setheadmodel( "head_us_army_c" ); //here
+    character\character_us_army_assault_rnd::main(); //here
     level._id_AC03 hide();
     level._id_C280 hide();
     level._id_BBBD hide();
-    level._id_C280.name = "Cpl. Dunn - Shadow Company"; //here
-    level._id_AC03.name = "Sgt. Foley - Shadow Company"; //here
+    level._id_C280.name = "Cpl. Dunn - US Army"; //here
+    level._id_AC03.name = "Sgt. Foley - US Army"; //here
     level._id_AC03.animname = "crash_leader";
     level._id_C280.animname = "crash_dunn";
     level._id_BBBD.animname = "crash_redshirt";
@@ -389,7 +389,7 @@ _id_D4CD()
 
 _id_C467()
 {
-    while ( level.player getweaponammoclip( "masada_digital_acog" ) > 0 )
+    while ( level.player getweaponammoclip( "m4m203_eotech" ) > 0 )
         wait 0.05;
 
     common_scripts\utility::flag_set( "player_ran_out_of_first_clip" );
