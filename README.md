@@ -22,7 +22,7 @@
 <p dir="auto">Extract the archive and move the files from the latest release into root folder of the game, where MW2CR.exe is located.</p>
 </li>
 <li>
-<p dir="auto">Launch the h2-mod.exe and load <strong>ShadowCompany</strong> mod in game.</p>
+<p dir="auto">Launch the h2-mod.exe and load <strong>H2_Rangers</strong> mod in game.</p>
 </li>
 <li>
 <p dir="auto">Have fun!</p>
