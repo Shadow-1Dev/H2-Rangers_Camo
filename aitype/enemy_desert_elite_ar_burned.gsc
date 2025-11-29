@@ -76,7 +76,7 @@ main()
                 character\character_us_army_assault_d::main();
                 break;
             case 4:
-                character\character_us_army_assault_lmg::main();
+                character\character_us_army_lmg::main();
                 break;
             case 5:
                 character\character_us_army_smg_b::main();
@@ -101,7 +101,7 @@ precache()
     character\character_us_army_assault_b::precache();
     character\character_us_army_assault_c::precache();
     character\character_us_army_assault_d::precache();
-    character\character_us_army_assault_lmg::precache();
+    character\character_us_army_lmg::precache();
     character\character_us_army_smg_b::precache();
     character\character_us_army_smg_c::precache();
     character\character_us_army_smg::precache();
