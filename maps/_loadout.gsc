@@ -48,7 +48,7 @@ give_loadout()
 
     maps\_loadout_code::loadout( "dcemp", "m4m203_eotech", "beretta", "fraggrenade", "flash_grenade", "viewmodel_base_viewhands", "american" );
 
-    maps\_loadout_code::loadout( "dc_whitehouse", "m4m203_eotech", "beretta", "fraggrenade", "flash_grenade", "viewmodel_base_viewhands", "american" );
+    maps\_loadout_code::loadout( "dc_whitehouse", "m16_acog", "dragunov", "fraggrenade", "flash_grenade", "viewmodel_base_viewhands", "american" );
 
     maps\_loadout_code::loadout( "estate", "masada_digital_grenadier_eotech", "cheytac_silencer_desert", "fraggrenade", "flash_grenade", "viewmodel_base_viewhands", "british" );
 
