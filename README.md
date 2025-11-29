@@ -43,3 +43,7 @@
 
 <img width="1920" height="1080" alt="Screenshot (124)" src="https://github.com/user-attachments/assets/d708f301-2b33-4bda-8a5e-8d16cfd96aa8" />
 
+
+Credits for re-texturing models goes for ZEEK
+Credits for Porting models and weapons goes for ME
+
