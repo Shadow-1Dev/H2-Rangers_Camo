@@ -16,7 +16,7 @@
 </li>
 <li>
 <p dir="auto">Download the mod.<br>
-<strong>Do NOT download the repository as ZIP, that won't work, make sure you download the LATEST RELEASE.</strong></p>
+<strong>download the repository as ZIP, and make sure you download the FF files Manually one by one.</strong></p>
 </li>
 <li>
 <p dir="auto">Extract the archive and move the files from the latest release into root folder of the game, where MW2CR.exe is located.</p>
